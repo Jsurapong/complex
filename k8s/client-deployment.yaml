@@ -8,11 +8,11 @@ spec:
     matchLabels:
       component: web
   template:
-    matadata:
-      label:
-        component: web
+    metadata:
+        labels:
+          component: web
     spec:
-      container:
+      containers:
         - name: client
           image: stephengrider/multi-client
           ports:
